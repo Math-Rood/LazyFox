@@ -10,7 +10,7 @@ public class DeathTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            gameController.ActivateDefeatPanel();
+            gameController.ActivateDefeatScene();
         }
     }
 }
