@@ -27425,6 +27425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eagle
       objectReference: {fileID: 0}
+    - target: {fileID: 4927432119032411798, guid: 1578a637998d90744b9b1020910ae387, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4927432119032411799, guid: 1578a637998d90744b9b1020910ae387, type: 3}
       propertyPath: m_RootOrder
       value: 14

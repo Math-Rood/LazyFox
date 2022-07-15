@@ -35,7 +35,7 @@ public class EagleMove : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            FindObjectOfType<GameController>().ActivateDefeatPanel();
+            FindObjectOfType<GameController>().ActivateDefeatScene();
         }
     }
 }
