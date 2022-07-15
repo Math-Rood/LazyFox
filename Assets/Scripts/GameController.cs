@@ -22,9 +22,9 @@ public class GameController : MonoBehaviour
         audioSource.Stop();
     }
 
-    public void ActivateDefeatPanel()
+    public void ActivateDefeatScene()
     {
-        defeatPanel.SetActive(true);
+        SceneManager.LoadScene("Defeat Scene");
         Time.timeScale = 0;
         audioSource.Stop();
     }
@@ -32,6 +32,6 @@ public class GameController : MonoBehaviour
     public void ReloadLevel()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Gameplay");
     }
 }
