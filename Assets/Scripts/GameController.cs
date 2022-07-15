@@ -17,12 +17,14 @@ public class GameController : MonoBehaviour
 
     public void ActivateVictoryPanel()
     {
-        SceneManager.LoadScene("Victory");
+        victoryPanel.SetActive(true);
+        Time.timeScale = 0;
+        audioSource.Stop();
     }
 
-    public void ActivateDefeatPanel()
+    public void ActivateDefeatScene()
     {
-        defeatPanel.SetActive(true);
+        SceneManager.LoadScene("Defeat Scene");
         Time.timeScale = 0;
         audioSource.Stop();
     }
@@ -31,10 +33,5 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("Gameplay");
-    }
-
-    public void BackToMenu()
-    {
-        SceneManager.LoadScene("Menu");
     }
 }
