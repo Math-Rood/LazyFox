@@ -17,9 +17,7 @@ public class GameController : MonoBehaviour
 
     public void ActivateVictoryPanel()
     {
-        victoryPanel.SetActive(true);
-        Time.timeScale = 0;
-        audioSource.Stop();
+        SceneManager.LoadScene("Victory");
     }
 
     public void ActivateDefeatPanel()
@@ -32,7 +30,7 @@ public class GameController : MonoBehaviour
     public void ReloadLevel()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Gameplay");
     }
 
     public void BackToMenu()
